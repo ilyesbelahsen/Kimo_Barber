@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PRENDRE CONTACT</title>
+        <link rel="stylesheet" href="style2.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="shortcut icon" href="img/logoonglet.png" type="img">
+    </head>
+
+    <body>
+        <header class="barre">
+            <a class="titlebarre" href="index.html">ACCUEIL</a>
+            <a class="titlebarre" href="#Acces">ACCES</a>
+            <a class="titlebarre" href="https://calendly.com/kimo_barber" target="_blank">RENDEZ-VOUS</a>
+            <a class="titlebarre" href="index2.html" target="_blank">CONTACT</a>
+            <div class="animation start-home"></div>
+        </header>
+
+        
+        <form class="BoxEcrire" action="">
+            <legend id="Avis" ><h2 class="titre">Nous écrire</h2></legend>
+                <div class="ContactFromInputBox">
+                    <div class="ContactFromInputBox2">
+                        <label class="ContactFormLabel" for="nominput" inputmode="text">Nom</label>
+                        <input class="ContactFormInput1" type="text" id="nominput" name="nom" required>
+                    </div>
+                    <div class="ContactFromInputBox2">
+                        <label class="ContactFormLabel" for="emailinput">Email</label>
+                        <input class="ContactFormInput2" type="email" id="emailinput" name="email" placeholder="Contact@demo.fr" required>
+                    </div>
+                    <div class="ContactFromInputBox2">
+                        <label class="ContactFormLabel" for="telinput">Téléphone</label>
+                        <input class="ContactFormInput3" type="tel" id="telinput" name="Téléphone" required>
+                    </div>
+                    <div class="ContactFromInputBox2">
+                        <label class="ContactFormLabel" for="Objetinput">Objet</label>
+                        <input class="ContactFormInput4" type="text" id="Objetinput" name="email" required>
+                    </div>
+    
+                    <div class="ContactFromInputBox2">
+                        <label class="ContactFormLabel" for="msginput">Message</label>
+                    </div>
+
+                    <div>
+                        <textarea class="ContactFormInput5" name="Message" id="msginput" cols="50" rows="10" placeholder="écris ton méssage ..."></textarea>
+                    </div>
+    
+                    <div class="ContactFromInputBox2">
+                        <label class="ContactFormLabel"><input type="checkbox" name="condition" required>J'accepte les conditions général d'utilisation </label>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button id="btn4">Envoyer</button>
+                    <p id="btn4-text" class="hidden">INFO : Site vitrine en HTML, CSS et JavaScript. Service non disponible actuellement. L'équipe KIMO BARBER vous remercie malgré tout pour votre message.</p>
+                    <input class="ContactFromInputvalid" type="reset" value="Annuler">
+                </div>
+                
+        </form>
+        <script>
+                const btn4Text = document.getElementById('btn4-text');
+                const btn4 = document.getElementById('btn4');
+
+                btn4.addEventListener('click', () => {
+                btn4Text.classList.remove('hidden');
+                btn4Text.classList.add('popup-message');
+                });
+
+                btn4Text.addEventListener('animationend', () => {
+                btn4Text.classList.remove('popup-message');
+                btn4Text.classList.add('hidden');
+});
+        </script>
+
+        <div class="BoxAcces">
+        <h2 id="Acces" class="titre">Accès</h2>
+                <div>
+                    <div class="Accescontain">
+                        <div class="imgcontact">
+                            <img src="img/imgcontact2.jpg" alt="maison"> 
+                        </div>
+                        <div class="titlecontact">
+                            <p>KIMO BARBER</p>
+                        </div>
+                    </div>
+        
+                    <div class="Accescontain">
+                        <div class="imglocalis">
+                            <img src="img/imgpos2.jpg" alt="">
+                        </div>
+                        <div class="adressecontact">
+                            <p>40 avenue escadrille Normandie</p>
+                        </div>
+                    </div>
+                    <div class="Accescontain">
+                        <div class="imgapelle">
+                            <img src="img/imgappel2.jpg" alt="">
+                        </div>
+                        <div class="numcontact">
+                            <p>07 83 36 54 35</p>
+                        </div>
+                    </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.028375793598!2d5.408824715746683!3d43.334595280991756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf94f4816dbf%3A0xfe58a8986168193c!2s40%20Av.%20Escadrille%20Normandie%20Niemen%2C%2013013%20Marseille!5e0!3m2!1sfr!2sfr!4v1670250779814!5m2!1sfr!2sfr"  style="border:0; height: 220px; width: 440px; margin: 5% 8%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    <footer class="footer">
+        <div class="footer_contact">
+            <img src="img/appellefooter.png" alt="">
+            <a class="footer_contact_tel" href="tel:+33-7-83-36-54-35" style="position: relative; bottom: 10px;">+33 7 83 36 54 35</a>
+            <img src="img/posfooter.jpg" alt="">
+            <a href="https://www.google.com/maps/place/40+Av.+Escadrille+Normandie+Niemen,+13013+Marseille/@43.3345952,5.4067862,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf94f4816dbf:0xfe58a8986168193c!8m2!3d43.3345914!4d5.4110134" 
+            target="_blank" class="footer_contact_adresse" style="position: relative; bottom: 10px;">40 Av. Escadrille Normandie Niemmen - 13013 Marseille</a>
+        </div>
+        <hr class="hr">
+        <div class="footer_copyright">
+            <span class="footer_copyright_content">© 2022</span>
+            <span class="footer_copyright_content"> - </span>
+            <a class="footer_copyright_content_href" target="_blank" href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires">INFORMATION LÉGALES</a>
+            <span class="footer_copyright_content"> - </span>
+            <a  class="footer_copyright_content_href" href="https://www.vd-avocat.fr/conditions-generales-d-utilisation" target="_blank">CGU</a>
+            <span class="footer_copyright_content"> - </span>
+            <a class="footer_copyright_content_href" target="_blank" href="https://www.ionos.fr/digitalguide/sites-internet/droit-dinternet/politique-de-confidentialite-sur-internet/">PARAMÉTRER LES COOKIES</a>
+        </div>
+
+    </footer>
+       
+</body>
+</html>

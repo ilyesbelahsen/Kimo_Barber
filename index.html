@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIMO BARBER</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="img/logoonglet.png" type="img">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style> @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); </style>
+</head>#
+
+<body>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+
+    <nav class="barre">
+        <a class="titlebarre" href="index.html">ACCUEIL</a>
+        <a class="titlebarre" href="#CDS">PRESTATION ET TARIFS</a>
+        <a class="titlebarre" href="https://calendly.com/kimo_barber" target="_blank">RENDEZ-VOUS</a>
+        <a class="titlebarre" href="index2.html" target="_blank">CONTACT</a>
+        <div class="animation start-home"></div>
+    </nav>
+    <ion-icon class="menu" name="menu"></ion-icon>
+
+    <div class="container">
+		<div class="alert alert-error">
+			<div class="alert-icon">
+				<span class="material-symbols-outlined">
+					info
+				</span>
+			</div>
+			<div class="alert-text">
+				De l'entraînement au réel professionnel ! Le site vitrine en HTML, CSS et JavaScript, initialement un exercice, a pris vie et contribué à des projets concrets. Veuillez noter que KIMO BARBER n'est plus disponible.</div>
+		</div>
+	</div>
+
+	<script>
+		
+		const alertBox = document.querySelector(".alert");
+
+		setTimeout(() => alertBox.remove(), 7000);
+	</script>
+
+        <div class="bloctitre">
+            <h1 class="titreprinc">KIMO BARBER</h1>
+                <a class="input" href="https://calendly.com/kimo_barber" target="_blank" >
+                    <span>PRENDRE RENDEZ-VOUS</span>
+                    <script>
+                        const input = document.querySelector('.input');
+                        input.onmousemove = function(e){
+                            const x = e.pageX - input.offsetLeft;
+                            const y = e.pageY - input.offsetTop;
+
+                            input.style.setProperty('--x', x + 'px');
+                            input.style.setProperty('--y', y + 'px'); 
+                        }
+                    </script>
+                </a>
+
+        </div>
+
+    <div class="box1">
+        <div class="sous1_box1">
+
+            <a href="https://www.instagram.com/kimo_barber13/?next=%2F" target="_blank" >
+                <div class="boxheader">
+                    <img src="img/INSTA.png" alt="">
+                    <span class="boxheader_txt">INSTAGRAM</span>
+                </div>
+
+    
+            <a href="tel:+33-7-83-36-54-35">
+                <div class="boxheader2">
+                    <img src="img/TEL.png" alt="">
+                    <span class="boxheader_txt">+33 7 83 36 54 35</span>
+                </div>
+            </a>
+    
+            <a href="Contact.html">
+                <div class="boxheader">
+                    <img src="img/MESS.png" alt="">
+                    <span class="boxheader_txt">PRENDRE CONTACT</span>
+                </div>
+            </a>
+        </div>
+    
+        <div class="sous2_box1">
+            <h1 class="titre1" id="Presentation">Kimo Barber, votre coiffeur à l'université de Saint Jérôme</h1>
+            <div class="content_sous2_box1">
+                <img class="img_sous2_box1" src="img/notrelogo.png" alt="">
+                <span class="txt_sous2_box1">Kimo, le coiffeur de l'université qui vient subvenir aux besoin de tous. Nulle étudiant n'aura d'excuse pour mettre à jour sa coiffure et son allure. Il s'agit pour vous, étudiant ou autres, 
+                    d'être au paroxysme de votre prestance.
+                    <br><br><br>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <h1 class="titre">Qui sommes-nous ?</h1>
+        <div class="imgtxt_box2">
+            <img class="img" src="img/KARIM.jpeg" alt="">
+            <p class="text_sousimg">Je suis Karim, jeune étudiant adepte d'arts et de sports. Je suis ambitieux de refléter mes qualités artistiques sur les coupes des étudiants. </p>
+            <br><br>
+        </div>
+            
+        <div class="imgtxt_box2">
+            <img class="img" src="img/ILYES.jpeg" alt="">
+            <p class="text_sousimg"> Moi c'est ilyes, je suis étudiant et passioné par l'informatique. Mon job au sein de ce projet d'avoir concu ce site web en plus de cela je gére de manière optimale la prise de rendez vous et j'assure une bonnne communication afin de faire perdurer ce projet.</p>
+        </div>
+
+    </div>
+    <div class="box3">
+        <h1 class="titre" id="Presentation">Le commencement ...</h1>
+        <div class="content_box3">
+            <img class="img_box3" src="img/imgpresent.jpeg" alt="">
+            <span class="txt_box3">Curieux de s’aventurer dans le domaine de la coiffure, nous avons décidé de se lancer dans un projet.
+                Il s’agit seulement de la concrétisation d’un travail effectuer sur la chevelure d’Ilyes pendant toute la première année.
+                En effet, il demeurait jusqu'à là mon seul modèle.
+                C'est ainsi qu'à raisonner l'idée, lorsqu’il me dit : « Tu coupes archi bien, viens on lance un réseau dans l’université ? … ».
+            </span>
+        </div>
+    </div>
+
+    <div class=box4>
+        <div class="content_box4">
+            <span class="txt_box4">Je m’appelle Karim, alias KIMO. Le mannequin si élégant que vous voyez avec moi sur la photo, c’est Ilyes. 
+                Nous sommes deux étudiant en école d’ingénieur à Polytech Marseille, en deuxième année. 
+                Nous nous sommes connus en 2021, en première année, et depuis ce jour, nos aventures ne deviennent que plus belles.
+                <br><br>
+            </span>
+            <img class="img_box4" src="img/presentation_img.jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="box5">
+        <h1 id="CDS" class="titre">Prestations et Tarifs</h1>
+        <div>
+            <h2 style="color: lightgrey; font-family: 'Dancing Script', cursive; font-size: 50px;  letter-spacing: 2px;
+            line-height: 1.4em; margin-left: 20%; box-shadow: 0px 0px 10px black; width: 60%; border-radius: 15px; margin-bottom: 5%;">
+                Retrouvez toute nos prestations pour seulement 7€
+            </h2>
+        </div>
+        <div class="img_box5">
+            <img class="img" src="img/MEC.jpeg" alt="IlyesG">
+        </div>
+        <div class="img_box5">
+            <img class="img" src="img/BaptisteA.jpeg" alt="BaptisteA">
+        </div>
+        <div class="img_box5">
+            <img class="img" src="img/SalahG.jpeg" alt="SalahG">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_contact">
+            <img src="img/appellefooter.png" alt="">
+            <a class="footer_contact_tel" href="tel:+33-7-83-36-54-35" style="position: relative; bottom: 10px;">+33 7 83 36 54 35</a>
+            <img src="img/posfooter.jpg" alt="">
+            <a href="https://www.google.com/maps/place/40+Av.+Escadrille+Normandie+Niemen,+13013+Marseille/@43.3345952,5.4067862,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9bf94f4816dbf:0xfe58a8986168193c!8m2!3d43.3345914!4d5.4110134" 
+            target="_blank" class="footer_contact_adresse" style="position: relative; bottom: 10px;">40 Av. Escadrille Normandie Niemmen - 13013 Marseille</a>
+        </div>
+        <hr class="hr">
+        <div class="footer_copyright">
+            <span class="footer_copyright_content">© 2022</span>
+            <span class="footer_copyright_content"> - </span>
+            <a class="footer_copyright_content_href" target="_blank" href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires">INFORMATION LÉGALES</a>
+            <span class="footer_copyright_content"> - </span>
+            <a  class="footer_copyright_content_href" href="https://www.vd-avocat.fr/conditions-generales-d-utilisation" target="_blank">CGU</a>
+            <span class="footer_copyright_content"> - </span>
+            <a class="footer_copyright_content_href" target="_blank" href="https://www.ionos.fr/digitalguide/sites-internet/droit-dinternet/politique-de-confidentialite-sur-internet/">PARAMÉTRER LES COOKIES</a>
+        </div>
+
+    </footer>
+</body>
+</html>

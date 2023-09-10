@@ -1,0 +1,275 @@
+body {
+    background: url(img/PHOTO2.jpg) fixed center;
+    background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+*{
+    scroll-behavior: smooth;
+    }
+.barre {
+    position: fixed;
+    margin-top: 15px;
+    width: 88%;
+    margin-left: 5%;
+    height: 50px;
+    background: #2F2F2F;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba( 0, 0, 0, .1 );
+    z-index: 6;
+
+}
+
+.barre .titlebarre {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: wheat;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    font-family: Lato;
+}
+
+.barre .animation {
+    position:absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: wheat;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+.titlebarre:hover {
+    color: black;
+    font-size: 15px;
+    line-height: 50px;
+    font-family: Lato;
+}
+
+.titlebarre:nth-child(1) {
+    width: 25%;
+}
+
+.barre .start-accueil, .titlebarre:nth-child(1):hover ~.animation {
+    width: 25%;
+    left: 0;
+}
+
+.titlebarre:nth-child(2) {
+    width: 25%;
+}
+
+.barre .start-prestation, .titlebarre:nth-child(2):hover ~.animation {
+    width: 25%;
+    left: 25%;
+}
+.titlebarre:nth-child(3) {
+    width:25%;
+}
+
+.barre .start-rdv, .titlebarre:nth-child(3):hover ~.animation {
+    width: 25%;
+    left: 50%;
+}
+.titlebarre:nth-child(4) {
+    width: 25%;
+}
+
+.barre .start-contact, .titlebarre:nth-child(4):hover ~.animation {
+    width: 25%;
+    left: 75%;
+}
+
+.titre {
+    color: wheat;
+    text-align: center;
+    font-family: Lato;
+}
+.ContactFormLabel{
+    color: wheat;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.ContactFromInputBox2 {
+    margin: 4%;
+}
+
+.ContactFormInput1,
+.ContactFormInput2,
+.ContactFormInput3,
+.ContactFormInput4,
+.ContactFormInput5 {
+    background: black;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    color: white;
+}
+
+.ContactFormInput1, .ContactFormInput5 {
+    margin-left: 50px;
+}
+.ContactFormInput2 {
+    margin-left: 47px;
+}
+.ContactFormInput3 {
+    margin-left: 14px;
+}
+.ContactFormInput4 {
+    margin-left: 44px;
+}
+
+.ContactFromInputvalid, button {
+    padding: 10px;
+    transition: 1s;
+    color: wheat;
+    background-color: #ffffff00;
+    border-color: wheat;
+    border: solid;
+    border-width: 1px;
+    text-decoration: none;
+    font-family: Lato;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.ContactFromInputvalid:hover {
+    transform:scale(1.1) ;
+    color: black;
+    background-color: wheat;
+}
+
+.BoxEcrire, .BoxAcces {
+    float: right;
+    width: 40%;
+    border: solid;
+    border-color: wheat;
+}
+
+.BoxEcrire {
+    margin-top: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 3%;
+}
+.BoxAcces {
+    margin-left:6%;
+    margin-right:6%;
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+
+.Accescontain {
+    color: wheat;
+    margin-left: 5%;
+    height: 40px;
+}
+
+.imgcontact, .titlecontact, .imglocalis, .adressecontact, .imgapelle, .numcontact,
+.imginsta, .instacontact  {
+    display: inline-block;
+}
+
+.adressecontact, .instacontact, .numcontact, .titlecontact {
+    margin-left: 15px;
+}
+
+  
+  .hidden {
+    display: none;
+  }
+  
+  #btn4-text {
+    height: 72px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: wheat;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 72px;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+  }
+  
+  .popup-message {
+    animation: popup 3s forwards;
+    position: absolute;
+    left: 20px;
+
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: translateY(15%);
+      opacity: 0;
+    }
+    10%, 90% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(15%);
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+
+/* FOOTER */
+.footer {
+    background: #2F2F2F;
+    clear: both;
+
+}
+
+.footer_copyright, .footer_contact {
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+.footer_contact_adresse{
+    height: 5Opx;
+}
+
+.hr {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-color: wheat;
+    border-width: 0.5;
+}
+
+.footer_copyright_content,
+.footer_contact_adresse {
+    color: wheat;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+}
+ .footer_copyright_content_href, .footer_contact_tel, .footer_contact_adresse{
+    color: wheat;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.7s; 
+ }
+ .footer_copyright_content_href:hover, .footer_contact_tel:hover, .footer_contact_adresse:hover{
+    color: grey;
+ }
